@@ -2,5 +2,9 @@
   {
     "sshUrl": "https://github.com/luisquix/stunning-garbanzo.git",
     "branch": "main"
+  },
+  {
+    "sshUrl": "git@github.com:luisquix/stunning-garbanzo.git",
+    "branch": "other"
   }
 ]
