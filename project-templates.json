@@ -6,5 +6,25 @@
   {
     "sshUrl": "git@github.com:luisquix/stunning-garbanzo.git",
     "branch": "other"
+  },
+  {
+    "httpUrl": "https://github.com/ChrisGilchrist/ChrisProjectTemplate1.git",
+    "branch": "main"
+  },
+  {
+    "httpUrl": "https://github.com/ChrisGilchrist/ChrisProjectTemplate2.git",
+    "branch": "main"
+  },
+  {
+    "httpUrl": "https://github.com/ChrisGilchrist/ChrisProjectTemplate3.git",
+    "branch": "main"
+  },
+  {
+    "httpUrl": "https://github.com/ChrisGilchrist/ChrisProjectTemplate4.git",
+    "branch": "main"
+  },
+  {
+    "httpUrl": "https://github.com/ChrisGilchrist/ChrisProjectTemplate5.git",
+    "branch": "main"
   }
 ]
