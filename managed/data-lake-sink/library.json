@@ -7,5 +7,6 @@
       "Type": ["Connectors"],
       "Category": ["Quix DataLake"]
   },
+  "IconFile": "icon.png",
   "shortDescription": "Consume data from a Kafka topic and write it to Quix DataLake."
 }
