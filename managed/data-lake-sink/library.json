@@ -7,5 +7,5 @@
       "Type": ["Connectors"],
       "Category": ["Quix Managed"]
   },
-  "shortDescription": "Consume data from a Kafka topic and write it to Quix DataLake"
+  "shortDescription": "Consume data from a Kafka topic and write it to Quix DataLake."
 }
