@@ -4,7 +4,8 @@
   "language": "Managed",
   "tags": {
       "Pipeline Stage": ["Destination"],
-      "Type": ["Connectors"]
+      "Type": ["Connectors"],
+      "Category": ["Quix Managed"]
   },
-  "shortDescription": "Quix DataLake Sink stores topic data to a blob storage"
+  "shortDescription": "Consume data from a Kafka topic and write it to Quix DataLake"
 }
