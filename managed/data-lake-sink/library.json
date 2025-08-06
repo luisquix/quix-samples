@@ -4,7 +4,7 @@
   "language": "Managed",
   "tags": {
       "Pipeline Stage": ["Destination"],
-      "Type": ["Connectors"],
+      "Type": ["Connectors"]
   },
   "shortDescription": "Quix DataLake Sink stores topic data to a blob storage"
 }
