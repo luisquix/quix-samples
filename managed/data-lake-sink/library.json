@@ -8,5 +8,13 @@
       "Category": ["Quix DataLake"]
   },
   "IconFile": "icon.png",
-  "shortDescription": "Consume data from a Kafka topic and write it to Quix DataLake."
+  "shortDescription": "Consume data from a Kafka topic and write it to Quix DataLake.",
+  "DeploySettings": {
+      "DeploymentType": "Service",
+      "CpuMillicores": 500,
+      "MemoryInMb": 1500,
+      "Replicas": 1,
+      "PublicAccess": false,
+      "ValidateConnection": false
+  }
 }
