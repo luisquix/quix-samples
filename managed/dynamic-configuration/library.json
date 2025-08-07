@@ -1,6 +1,6 @@
 {
-  "libraryItemId": "configuration-manager",
-  "name": "Quix Configuration Manager",
+  "libraryItemId": "dynamic-configuration",
+  "name": "Quix Dynamic Configuration Manager",
   "language": "Managed",
   "tags": {
     "Category": ["Database"],
