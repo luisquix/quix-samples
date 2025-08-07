@@ -10,7 +10,7 @@
   "IconFile": "icon.png",
   "shortDescription": "Consume data from a Kafka topic and write it to Quix DataLake.",
   "DeploySettings": {
-      "DeploymentType": "Service",
+      "DeploymentType": "Managed",
       "CpuMillicores": 500,
       "MemoryInMb": 1500,
       "Replicas": 1,
