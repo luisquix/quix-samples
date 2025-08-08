@@ -1,25 +1,37 @@
 # Quix Datalake Sink
 
-[This connector](https://github.com/quixio/quix-samples) streams data from a Kafka topic into the Quix Data Lake.
+The **Quix Datalake Sink** is a managed service for seamless data ingestion into the Quix Data Lake. It offers a robust, extensible, and user-friendly interface for building efficient and reliable data pipelines for analytics and machine learning.
 
-## How to run
+## How to Run
 
-Create or log in to your Quix account and open **Connectors → Add connector → Quix Datalake Sink**.  
-Click **Set up connector**, complete the parameters below, then **Test connection & deploy**.
+1. Create or log in to your Quix account.
+2. Navigate to **Connectors → Add connector → Quix Datalake Sink**.
+3. Click **Set up connector**, fill in the required parameters (see below), then click **Test connection & deploy**.
 
-> *Managed service* – the container image is hosted and operated by Quix. You only supply configuration; no Docker, servers, or updates to manage.
+> **Managed Service:**  
+> The container image is hosted and operated by Quix. You only provide configuration—no need to manage Docker, servers, or updates.
 
-## Environment variables
+## Configuration
 
-The connector recognises these parameters:
+### Required Configuration
 
-- **topic** – Kafka topic to consume (**required**)
-- **avroCompression** – Avro codec (`snappy` | `gzip`, default `snappy`)
-- **indexRowCount** – Rows per Avro index file (default `1000`)
-- **datacatalogRequestTimeout** – Data Catalog API timeout in seconds (default `5`)
-- **commitTimeInterval** – Seconds between commits (default `60`)
-- **commitMsgInterval** – Messages between commits (default `0`)
-- **logLevel** – Logging level (`INFO` | `DEBUG`, default `INFO`)
-- **consumerGroup** – Kafka consumer-group ID (optional)
-- **autoOffsetReset** – Offset reset strategy (`latest` | `earliest`, default `latest`)
-- **maxWorkers** – Parallel sink worker threads (default `5`)
+- **topic**: The Kafka topic to consume (**required**)
+
+### Quix Streams Configuration
+
+This connector uses [quixstreams](https://github.com/quixio/quix-streams) and exposes several parameters from the library. For more details, see the [Quix Streams documentation](https://quix.io/docs/quix-streams/configuration.html#advanced-kafka-configuration).
+
+- **commitTimeInterval**: Seconds between commits (default: `60`)
+- **commitMsgInterval**: Messages between commits (default: `0`)
+- **consumerGroup**: Kafka consumer group ID (default: `quixstreams-default`)
+- **autoOffsetReset**: Offset reset strategy (`latest` or `earliest`, default: `latest`)
+
+### Datalake-Specific Configuration
+
+These parameters are unique to the Quix Datalake Sink:
+
+- **avroCompression**: Avro compression codec (`snappy` or `gzip`, default: `snappy`)
+- **maxWorkers**: Maximum number of threads for uploading (default: `5`)
+- **indexRowCount**: Number of checkpoints per index file (default: `1000`)
+- **datacatalogRequestTimeout**: Data Catalog API timeout in seconds (default: `5`)
+- **logLevel**: Logging level (`INFO` or `DEBUG`, default: `INFO`)
